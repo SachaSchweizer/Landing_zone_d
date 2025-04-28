@@ -21,7 +21,7 @@ jobs:
         with:
           client-id: 1155c27d-f563-4b95-ab06-f9b9e935c347
           tenant-id: b1a8ac21-915f-4351-a075-b30346a974af
-          subscription-id: dd1d9f582-ce04-4d4d-a490-ab247b746f7b
+          subscription-id: d1d9f582-ce04-4d4d-a490-ab247b746f7b
 
       - name: 'Deploy to Azure'
         run: |
