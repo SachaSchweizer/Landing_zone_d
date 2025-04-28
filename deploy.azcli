@@ -5,13 +5,18 @@ az deployment sub create \
 --location $LOCATION \
 --parameters \
     location=$LOCATION \
-    
+
+az deployment sub create \
+    --name blob-example \
+    --location $location \
+    --template-file ./resources.bicep \
+    --parameters blobExample=true
 
 
  
 az deployment group create \
---name Deployment-$ (date + "%y-%m-%t%H)
---template-file storage.bicep\
+--name Deployment-$(date + "%y-%m-%t%H)
+--template-file resources.bicep\
 --location $Location
 --parameters \
     Location =$LOCATION \
