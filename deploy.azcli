@@ -1,0 +1,20 @@
+LOCATION='switzerlandnorth'
+az deployment sub create \
+--name Deployment-$(date +"%y-%m-%dT") \
+--template-file resource-group.bicep \
+--location $LOCATION \
+--parameters \
+    location=$LOCATION \
+    
+
+
+ 
+az deployment group create \
+--name Deployment-$ (date + "%y-%m-%t%H)
+--template-file resourecegroup.bicep\
+--location $Location
+--parameters \
+    Location =$LOCATION \
+    stage = dev
+
+
