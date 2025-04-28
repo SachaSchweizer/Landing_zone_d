@@ -1,3 +1,5 @@
+
+//Start of the Bicep file
 targetScope = 'subscription' 
 
 @description('The Location  where the ressource etc')

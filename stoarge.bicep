@@ -1,4 +1,4 @@
-module storageAccount 'br/public:avm/res/storage/storage-account:<version>' = {
+module storageAccount 'br/public:avm/res/storage/storage-account:0.19.0' = {
   name: 'storageAccountDeployment'
   params: {
     // Required parameters
