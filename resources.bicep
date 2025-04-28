@@ -5,7 +5,7 @@ module storageAccount 'br/public:avm/res/storage/storage-account:0.19.0' = {
     name: 'ssablob001'
     // Non-required parameters
     kind: 'BlobStorage'
-    location: 'switzerlandnortz'
+    location: 'switzerlandnorth'
       skuName: 'Standard_LRS'
   }
 }
