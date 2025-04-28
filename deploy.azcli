@@ -11,7 +11,7 @@ az deployment sub create \
  
 az deployment group create \
 --name Deployment-$ (date + "%y-%m-%t%H)
---template-file resourecegroup.bicep\
+--template-file storage.bicep\
 --location $Location
 --parameters \
     Location =$LOCATION \
