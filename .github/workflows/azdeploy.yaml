@@ -32,12 +32,6 @@ jobs:
             --parameters \
                 location=westeurope \
       
-          az deployment sub create \
-            --name Deployment-$(date +"%Y-%m-%dT%H-%M-%S") \
-            --template-file resources.bicep \
-            --location westeurope \
-            --parameters \
-                location=westeurope \
 
 
                 
