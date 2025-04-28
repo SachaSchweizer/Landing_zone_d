@@ -31,8 +31,7 @@ jobs:
             --location westeurope \
             --parameters \
                 location=westeurope \
-      - name: 'Deploy to Azured'
-        run: |
+      
           az deployment sub create \
             --name Deployment-$(date +"%Y-%m-%dT%H-%M-%S") \
             --template-file resources.bicep \
