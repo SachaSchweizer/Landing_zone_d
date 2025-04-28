@@ -14,6 +14,6 @@ tags: {
 
 }
 
-
-
+output rgName string = group.name
+output subscriptionId string = subscription().subscriptionId
 
