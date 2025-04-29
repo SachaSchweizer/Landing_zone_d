@@ -29,4 +29,6 @@ jobs:
             --name Deployment-$(date +"%Y-%m-%dT%H-%M-%S") \
             --template-file resource-group.bicep \
             --location westeurope \
-            --parameters           
+            --parameters \
+                location=westeurope
+                 resourceGroupName       
