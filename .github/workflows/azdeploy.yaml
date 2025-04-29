@@ -19,20 +19,14 @@ jobs:
       - name: '🧑‍🦱 Azure login'
         uses: azure/login@v2
         with:
-          client-id: 1155c27d-f563-4b95-ab06-f9b9e935c347
-          tenant-id: b1a8ac21-915f-4351-a075-b30346a974af
-          subscription-id: d1d9f582-ce04-4d4d-a490-ab247b746f7b
+          client-id: 9b02a82e-ae71-4836-aecf-b99f590c80c0
+          tenant-id: 022e4faf-c745-475a-be06-06b1e1c9e39d
+          subscription-id: b33f0285-db27-4896-ac5c-df22004b0aba
 
       - name: 'Deploy to Azure'
         run: |
           az deployment sub create \
             --name Deployment-$(date +"%Y-%m-%dT%H-%M-%S") \
             --template-file resource-group.bicep \
-            --parameters \
-                
-              
-
-      
-
-
-                
+            --location westeurope \
+            --parameters           
