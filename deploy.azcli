@@ -1,25 +1,37 @@
 LOCATION='switzerlandnorth'
+
 az deployment sub create \
---name Deployment-$(date +"%y-%m-%dT") \
---template-file resource-group.bicep \
---location $LOCATION \
---parameters \
+  --name Deployment-$(date +"%Y-%m-%dT%H-%M-%S") \
+  --location $LOCATION \
+  --template-file resource-group.bicep \
+  --parameters \
     location=$LOCATION \
+    stage=dev
 
-az deployment sub create \
-    --name blob-example \
-    --location $location \
-    --template-file ./resources.bicep \
-    --parameters blobExample=true
+LOCATION='switzerlandnorth'
 
-
- 
 az deployment group create \
---name Deployment-$(date + "%y-%m-%t%H)
---template-file resources.bicep\
---location $Location
---parameters \
-    Location =$LOCATION \
-    
+  --name Deployment-$(date +"%Y-%m-%dT%H-%M-%S") \
+  --resource-group 'courseWorkshopsacschw (Mein Titel Hidden)' \
+  --template-file resources.bicep \
+  --parameters \
+    location='switzerlandnorth'\
+    stage=dev
+
+LOCATION='switzerlandnorth'
+USER1='417c8ecc-1d93-4017-acec-af6dc96e49fa'
+USER2='c60b6046-aa1c-4183-a114-49d934d4ccba'
+PROJECT='ZI-Azure-Workshop'
+
+az deployment group create \
+  --name Deployment-$(date +"%Y-%m-%dT%H-%M-%S") \
+  --resource-group 'rg-aszend-dev' \
+  --template-file acr.bicep \
+  --parameters \
+    location=$LOCATION \
+    projectName=$PROJECT \
+    user1=$USER1 \
+    user2=$USER2 \
+    stage=dev
 
 
