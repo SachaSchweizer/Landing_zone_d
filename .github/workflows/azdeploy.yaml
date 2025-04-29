@@ -31,4 +31,4 @@ jobs:
             --location westeurope \
             --parameters \
                 location=westeurope \
-                 resourceGroupName       
+                 resourceGroupName      
