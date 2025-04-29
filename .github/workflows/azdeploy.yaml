@@ -30,7 +30,7 @@ jobs:
             --template-file resource-group.bicep \
             --location westeurope \
             --parameters \
-                location=westeurope \
+                
               
 
       
